@@ -1,16 +1,53 @@
 $enable-rounded: false;
-$blue: purple;
+$blue: yellow;
 
-button.btn {
-   padding: map-get($map: $spacers, $key: 4);
-}
+$colors: ();
+$colors: map-merge(
+   (
+      "blue": $blue,
+      "indigo": $indigo,
+      "purple": $purple,
+      "pink": $pink,
+      "red": $red,
+      "orange": $orange,
+      "yellow": $yellow,
+      "green": $green,
+      "teal": $teal,
+      "cyan": $cyan,
+      "white": $white,
+      "gray": $gray-600,
+      "gray-dark": $gray-800,
+   ),
+   $colors
+);
 
-button.btn-primary {
-   background-color: $blue;
-   border: 1px solid $blue;
-}
+$primary: $blue;
 
-button.btn-danger {
-   background-color: $yellow;
-   border: 1px solid $yellow;
-}
+$theme-colors: ();
+$theme-colors: map-merge(
+   (
+      "primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "danger": $danger,
+      "light": $light,
+      "dark": $dark,
+   ),
+   $theme-colors
+);
+
+// button.btn {
+//    padding: map-get($map: $spacers, $key: 4);
+// }
+
+// button.btn-primary {
+//    background-color: $blue;
+//    border: 1px solid $blue;
+// }
+
+// button.btn-danger {
+//    background-color: $yellow;
+//    border: 1px solid $yellow;
+// }
